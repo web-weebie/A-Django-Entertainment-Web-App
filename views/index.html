@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VooTube</title>
+    <link rel="stylesheet" href="/public/stylesheets/index.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <!-- logo  -->
+        <div class="brd-logo-wrapper">
+            <div class="menu-btn">
+                <span class="bx bx-menu bx-sm"></span>
+            </div>
+            
+            <a href="#" class="brd-logo"><img src="/public/images/VooTube-logo (1)/cover.png"  alt=""></a>
+        </div>
+
+        <!-- search bar -->
+        <div class="search-bar-wrapper">
+            <form action="" method="get">
+                <div class="nav-search">
+                    <input type="search" name="search" id="search">
+                </div> 
+                <div>
+                    <button type="submit"  class="nav-sr-btn"><i class="bx bx-search-alt bx-border"></i></button>
+                </div>
+            </form>
+        </div>
+
+        <!-- icons  -->
+        <div class="icons-wrapper">
+            <a href="#" id="create-vid-icon"><i class="bx bx-video-plus bx-md"></i></a>
+
+            <div class="notifications-wrap">
+                <button id="bell-btn"><i class='bx bx-bell bx-tada-hover bx-md'></i></button>
+                <span id="notifications">4</span>
+            </div>
+            <button class="sign-in-btn">sign in</button>
+
+            <button class="user-settings-btn">S</button>
+            
+        </div>
+
+        
+    </header>
+
+    <!-- sidebar  -->
+    
+
+    <!-- main body  -->
+    <main>
+        
+        <section class="main-content-wrapper">
+            <section class="sidebar-wrapper">
+                <!-- main titles layer  -->
+                <a href="" class="page active">
+                    <div class="page-wrap">
+                        <span class="bx bx-home"></span>
+                        <p>Home</p>
+                    </div>
+                </a>
+
+                <a href="" class="page">
+                    <div class="page-wrap">
+                        <span class="bx bx-film"></span>
+                        <p>Shorts</p>
+                    </div>
+                </a>
+
+                <a href="" class="page">
+                    <div class="page-wrap">
+                        <span class="bx bx-video"></span>
+                        <p id="subs">Subscriptions</p>
+                    </div>
+                </a>
+                <!-- horizontal line to break layout  -->
+                <div id="pg-brk"></div>
+                <!-- main titles cont'd  -->
+
+                <a href="" class="page">
+                    <div class="page-wrap">
+                        <span class="bx bxs-videos"></span>
+                        <p>Library</p>
+                    </div>
+                </a>
+
+                <a href="" class="page">
+                    <div class="page-wrap">
+                        <span class="bx bx-history"></span>
+                        <p>History</p>
+                    </div>
+                </a>
+
+                <a href="" class="page">
+                    <div class="page-wrap">
+                        <span class="bx bxs-playlist"></span>
+                        <p>Your Videos</p>
+                    </div>
+                </a>
+
+                <a href="" class="page">
+                    <div class="page-wrap">
+                        <span class="bx bx-time-five"></span>
+                        <p>Watch Later</p>
+                    </div>
+                </a>
+
+                <a href="" class="page">
+                    <div class="page-wrap">
+                        <span class="bx bx-like"></span>
+                        <p>Liked Videos</p>
+                    </div>
+                </a>
+                <!-- end of main title layer  -->
+                <!-- horizontal line to break layout  -->
+                <div id="pg-brk"></div>
+                <!-- subscriptions layer  -->
+                <!-- add overflow and a show more button  -->
+                <div class="subscriptions-wrapper">
+                    <h3>SUBSCRIPTIONS</h3>
+                    <a href="" class="channel-link">
+                        <div class="channel-wrapper">
+                            <img src="/public/images/Belle.jpg" style="width: 25px; height: 25px; border-radius: 60%;" alt="chn-image" class="chn-img"> &nbsp;
+                            <p id="channel-title">Channel Name and link to page</p>
+                            <span class="bx bx-signal-3"></span>
+                        </div>
+                       
+                    </a>
+
+                    <a href="" class="channel-link">
+                        <div class="channel-wrapper">
+                            <img src="/public/images/Belle.jpg" style="width: 25px; height: 25px; border-radius: 60%;" alt="chn-image" class="chn-img"> &nbsp;
+                            <p id="channel-title">Channel</p>
+                            <span class="bx bx-signal-3"></span>
+                        </div>
+                    </a>
+
+                    <a href="" class="channel-link">
+                        <div class="channel-wrapper">
+                            <img src="/public/images/Belle.jpg" style="width: 25px; height: 25px; border-radius: 60%;" alt="chn-image" class="chn-img"> &nbsp;
+                            <p id="channel-title">Channel</p>
+                            <span class="bx bx-signal-3"></span>
+                        </div>
+                    </a>
+
+                    
+                    <a href="" class="channel-link">
+                        <div class="channel-wrapper">
+                            <img src="/public/images/Belle.jpg" style="width: 25px; height: 25px; border-radius: 60%;" alt="chn-image" class="chn-img"> &nbsp;
+                            <p id="channel-title">Channel</p>
+                            <span class="bx bx-signal-3"></span>
+                        </div>
+                    </a>
+
+                    <a href="" class="channel-link">
+                        <div class="channel-wrapper">
+                            <img src="/public/images/Belle.jpg" style="width: 25px; height: 25px; border-radius: 60%;" alt="chn-image" class="chn-img"> &nbsp;
+                            <p id="channel-title">Channel</p>
+                            <span class="bx bx-signal-3"></span>
+                        </div>
+                    </a>
+
+
+                    <span class="read-more-text">
+                        <a href="" class="channel-link">
+                            <div class="channel-wrapper">
+                                <img src="/public/images/Belle.jpg" style="width: 25px; height: 25px; border-radius: 60%;" alt="chn-image" class="chn-img"> &nbsp;
+                                <p id="channel-title">Channel</p>
+                                <span class="bx bx-signal-3"></span>
+                            </div>
+                        </a>
+                        <a href="" class="channel-link">
+                            <div class="channel-wrapper">
+                                <img src="/public/images/Belle.jpg" style="width: 25px; height: 25px; border-radius: 60%;" alt="chn-image" class="chn-img"> &nbsp;
+                                <p id="channel-title">Channel</p>
+                                <span class="bx bx-signal-3"></span>
+                            </div>
+                        </a>
+                        <a href="" class="channel-link">
+                            <div class="channel-wrapper">
+                                <img src="/public/images/Belle.jpg" style="width: 25px; height: 25px; border-radius: 60%;" alt="chn-image" class="chn-img"> &nbsp;
+                                <p id="channel-title">Channel</p>
+                                <span class="bx bx-signal-3"></span>
+                            </div>
+                        </a>
+                        <a href="" class="channel-link">
+                            <div class="channel-wrapper">
+                                <img src="/public/images/Belle.jpg" style="width: 25px; height: 25px; border-radius: 60%;" alt="chn-image" class="chn-img"> &nbsp;
+                                <p id="channel-title">Channel</p>
+                                <span class="bx bx-signal-3"></span>
+                            </div>
+                        </a>
+                        <a href="" class="channel-link">
+                            <div class="channel-wrapper">
+                                <img src="/public/images/Belle.jpg" style="width: 25px; height: 25px; border-radius: 60%;" alt="chn-image" class="chn-img"> &nbsp;
+                                <p id="channel-title">Channel</p>
+                                <span class="bx bx-signal-3"></span>
+                            </div>
+                        </a>
+                    </span>
+
+
+                </div>
+
+                <span class="read-more-btn">show more</span>
+                <!-- end of subscription layer  -->
+                 <!-- horizontal line to break layout  -->
+                 <div id="pg-brk"></div>
+                <!-- miscellaneous activities layer  -->
+                <div class="misce-wrapper">
+                    <h3>EXPLORE</h3>
+
+                    <a href="" class="misc-item-link">
+                        <div class="misc-item-wrap">
+                            <span class="bx bxs-hot"></span>
+                            <p  class="misc-title">Trending</p>
+                        </div>
+                    </a>
+
+                    <a href="" class="misc-item-link">
+                        <div class="misc-item-wrap">
+                            <span class="bx bx-trophy"></span>
+                            <p class="misc-title">Sports</p>
+                        </div>
+                    </a>
+
+                    <a href="" class="misc-item-link">
+                        <div class="misc-item-wrap">
+                            <span class="bx bx-music"></span>
+                            <p class="misc-title">Music</p>
+                        </div>
+                    </a>
+
+                    <a href="" class="misc-item-link">
+                        <div class="misc-item-wrap">
+                            <span class="bx bxs-joystick"></span>
+                            <p class="misc-title">Gaming</p>
+                        </div>
+                    </a>
+
+                    <a href="" class="misc-item-link">
+                        <div class="misc-item-wrap">
+                            <span class="bx bx-news"></span>
+                            <p class="misc-title">News</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- end of miscellaneous layer  -->
+                 <!-- horizontal line to break layout  -->
+                 <div id="pg-brk"></div>
+                 <!-- toolkit layer  -->
+                 <div class="tools-wrapper">
+                    <div class="tool-wrap">
+                        <a href="" class="tools-pg">Settings <span class="bx bx-cog"></span></a>
+                    </div>
+                    <div class="tool-wrap">
+                        <a href="" class="tools-pg">Report History <span class="bx bx-flag"></span></a>
+                    </div>
+                    <div class="tool-wrap">
+                        <a href="" class="tools-pg">Help <span class="bx bx-help-circle"></span></a>
+                    </div>
+                    <div class="tool-wrap">
+                        <a href="" class="tools-pg">Send Feedback  <span class="bx bx-message"></span></a>
+                    </div>
+                 </div>
+                 <!-- end of toolkits layer  -->
+                  <!-- horizontal line to break layout  -->
+                  <div id="pg-brk"></div>
+                  <!-- footer embedded into sidebar  -->
+                  <div class="footer">
+                    <ul class="footer-links-wrap">
+                        <li class="list-item">
+                            <a href="" class="ft-link">About</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="" class="ft-link">Creators</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="" class="ft-link">Terms and Condition</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="" class="ft-link">Privacy and Policy</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="" class="ft-link">Contact Us</a>
+                        </li>
+                    </ul>
+                    <div class="copyright">
+                        <p>&copy;2023 VooDooTube</p>
+                    </div>
+                  </div>
+                  <!-- end of footer  -->
+            </section>
+
+            <!-- the gallery-scroll-area  -->
+            <section class="scroll-display videos-wrapper">
+                <!-- first row  -->
+                <div class="gallery-row">
+                    <a href="" class="gallery-item-link">
+                        <div class="video-gallery-item">
+                            <div class="video-thumbnail">
+                                <img src="/public/images/Belle.jpg"  alt="">
+                            </div>
+                            <div class="video-info-wrap">
+                                <div class="vid-img">
+                                    <img src="/public/images/Belle.jpg" style="width: 35px; height: 30px; border-radius: 60%;" alt="chn-image" class="chn-img"> &nbsp;
+                                </div> 
+                                <div class="video-info">
+                                   <p class="vid-title">asiwaju is the best song of 2022 <br>|| Meg Stallion won Meg Stallion won Meg Stallion won</p>
+                                   <a href="" class="chn-name">BlackTeaBlog</a>
+                                   <br>
+                                   <p href="" class="views">13k views</p> <span></span>
+                                   <p href="" class="time-upld">10 hours ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="" class="gallery-item-link">
+                        <div class="video-gallery-item">
+                            <div class="video-thumbnail">
+                                <img src="/public/images/Belle.jpg"  alt="">
+                            </div>
+                            <div class="video-info-wrap">
+                                <div class="vid-img">
+                                    <img src="/public/images/Belle.jpg" style="width: 35px; height: 30px; border-radius: 60%;" alt="chn-image" class="chn-img"> &nbsp;
+                                </div>
+                                <div class="video-info">
+                                   <p class="vid-title">asiwaju is the best song of 2022 <br> || Meg Stallion won Meg Stallion won Meg Stallion won</p>
+                                   <a href="" class="chn-name">BlackTeaBlog</a>
+                                   <br>
+                                   <p href="" class="views">13k views</p> <span></span>
+                                   <p href="" class="time-upld">10 hours ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="" class="gallery-item-link">
+                        <div class="video-gallery-item">
+                            <div class="video-thumbnail">
+                                <img src="/public/images/Belle.jpg"  alt="">
+                            </div>
+                            <div class="video-info-wrap">
+                                <div class="vid-img">
+                                    <img src="/public/images/Belle.jpg" style="width: 35px; height: 30px; border-radius: 60%;" alt="chn-image" class="chn-img"> &nbsp;
+                                </div>
+                                <div class="video-info">
+                                   <p class="vid-title">asiwaju is the best song of 2022 <br> || Meg Stallion won</p>
+                                   <a href="" class="chn-name">BlackTeaBlog</a>
+                                   <br>
+                                   <p href="" class="views">13k views</p> <span></span>
+                                   <p href="" class="time-upld">10 hours ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="" class="gallery-item-link">
+                        <div class="video-gallery-item">
+                            <div class="video-thumbnail">
+                                <img src="/public/images/Belle.jpg"  alt="">
+                            </div>
+                            <div class="video-info-wrap">
+                                <div class="vid-img">
+                                    <img src="/public/images/Belle.jpg" style="width: 35px; height: 30px; border-radius: 60%;" alt="chn-image" class="chn-img"> &nbsp;
+                                </div>
+                                <div class="video-info">
+                                   <p class="vid-title">asiwaju is the best song of 2022 <br> || Meg Stallion won</p>
+                                   <a href="" class="chn-name">BlackTeaBlog</a>
+                                   <br>
+                                   <p href="" class="views">13k views</p> <span></span>
+                                   <p href="" class="time-upld">10 hours ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            
+                <!-- second row  -->
+                <div class="gallery-row">
+                    <a href="" class="gallery-item-link">
+                        <div class="video-gallery-item">
+                            <div class="video-thumbnail">
+                                <img src="/public/images/Belle.jpg"  alt="">
+                            </div>
+                            <div class="video-info-wrap">
+                                <div class="vid-img">
+                                    <img src="/public/images/Belle.jpg" style="width: 35px; height: 30px; border-radius: 60%;" alt="chn-image" class="chn-img"> &nbsp;
+                                </div>
+                                <div class="video-info">
+                                   <p class="vid-title">asiwaju is the best song of 2022 <br> || Meg Stallion won</p>
+                                   <a href="" class="chn-name">BlackTeaBlog</a>
+                                   <br>
+                                   <p href="" class="views">13k views</p> <span></span>
+                                   <p href="" class="time-upld">10 hours ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="" class="gallery-item-link">
+                        <div class="video-gallery-item">
+                            <div class="video-thumbnail">
+                                <img src="/public/images/Belle.jpg"  alt="">
+                            </div>
+                            <div class="video-info-wrap">
+                                <div class="vid-img">
+                                    <img src="/public/images/Belle.jpg" style="width: 35px; height: 30px; border-radius: 60%;" alt="chn-image" class="chn-img"> &nbsp;
+                                </div>
+                                <div class="video-info">
+                                   <p class="vid-title">asiwaju is the best song of 2022 <br> || Meg Stallion won  Meg Stallion won  Meg Stallion won  Meg Stallion won</p>
+                                   <a href="" class="chn-name">BlackTeaBlog</a>
+                                   <br>
+                                   <p href="" class="views">13k views</p> <span></span>
+                                   <p href="" class="time-upld">10 hours ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="" class="gallery-item-link">
+                        <div class="video-gallery-item">
+                            <div class="video-thumbnail">
+                                <img src="/public/images/Belle.jpg"  alt="">
+                            </div>
+                            <div class="video-info-wrap">
+                                <div class="vid-img">
+                                    <img src="/public/images/Belle.jpg" style="width: 35px; height: 30px; border-radius: 60%;" alt="chn-image" class="chn-img"> &nbsp;
+                                </div>
+                                <div class="video-info">
+                                   <p class="vid-title">asiwaju is the best song of 2022 <br> || Meg Stallion won</p>
+                                   <a href="" class="chn-name">BlackTeaBlog</a>
+                                   <br>
+                                   <p href="" class="views">13k views</p> <span></span>
+                                   <p href="" class="time-upld">10 hours ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    
+                    <a href="" class="gallery-item-link">
+                        <div class="video-gallery-item">
+                            <div class="video-thumbnail">
+                                <img src="/public/images/Belle.jpg"  alt="">
+                            </div>
+                            <div class="video-info-wrap">
+                                <div class="vid-img">
+                                    <img src="/public/images/Belle.jpg" style="width: 35px; height: 30px; border-radius: 60%;" alt="chn-image" class="chn-img"> &nbsp;
+                                </div>
+                                <div class="video-info">
+                                   <p class="vid-title">asiwaju is the best song of 2022 <br> || Meg Stallion won</p>
+                                   <a href="" class="chn-name">BlackTeaBlog</a>
+                                   <br>
+                                   <p href="" class="views">13k views</p> <span></span>
+                                   <p href="" class="time-upld">10 hours ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- third row  -->
+                <div class="gallery-row">
+                    <a href="" class="gallery-item-link">
+                        <div class="video-gallery-item">
+                            <div class="video-thumbnail">
+                                <img class="thmb" src="/public/images/Belle.jpg"  alt="">
+                            </div>
+                            <div class="video-info-wrap">
+                                <div class="vid-img">
+                                    <img src="/public/images/Belle.jpg" style="width: 35px; height: 30px; border-radius: 60%;" alt="chn-image" class="chn-img"> &nbsp;
+                                </div>
+                                <div class="video-info">
+                                   <p class="vid-title">asiwaju is the best song of 2022 <br> || Meg Stallion won</p>
+                                   <a href="" class="chn-name">BlackTeaBlog</a>
+                                   <br>
+                                   <p href="" class="views">13k views</p> <span></span>
+                                   <p href="" class="time-upld">10 hours ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="" class="gallery-item-link">
+                        <div class="video-gallery-item">
+                            <div class="video-thumbnail">
+                                <img src="/public/images/Belle.jpg"  alt="">
+                            </div>
+                            <div class="video-info-wrap">
+                                <div class="vid-img">
+                                    <img src="/public/images/Belle.jpg" style="width: 35px; height: 30px; border-radius: 60%;" alt="chn-image" class="chn-img"> &nbsp;
+                                </div>
+                                <div class="video-info">
+                                   <p class="vid-title">asiwaju is the best song of 2022 <br> || Meg Stallion won</p>
+                                   <a href="" class="chn-name">BlackTeaBlog</a>
+                                   <br>
+                                   <p href="" class="views">13k views</p> <span></span>
+                                   <p href="" class="time-upld">10 hours ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="" class="gallery-item-link">
+                        <div class="video-gallery-item">
+                            <div class="video-thumbnail">
+                                <img src="/public/images/Belle.jpg" alt="">
+                            </div>
+                            <div class="video-info-wrap">
+                                <div class="vid-img">
+                                    <img src="/public/images/Belle.jpg" style="width: 35px; height: 30px; border-radius: 60%;" alt="chn-image" class="chn-img"> &nbsp;
+                                </div>
+                                <div class="video-info">
+                                   <p class="vid-title">asiwaju is the best song of 2022 <br> ||  Meg Stallion won</p>
+                                   <a href="" class="chn-name">BlackTeaBlog</a>
+                                   <br>
+                                   <p href="" class="views">13k views</p> <span></span>
+                                   <p href="" class="time-upld">10 hours ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="" class="gallery-item-link">
+                        <div class="video-gallery-item">
+                            <div class="video-thumbnail">
+                                <img src="/public/images/Belle.jpg"  alt="">
+                            </div>
+                            <div class="video-info-wrap">
+                                <div class="vid-img">
+                                    <img src="/public/images/Belle.jpg" style="width: 35px; height: 30px; border-radius: 60%;" alt="chn-image" class="chn-img"> &nbsp;
+                                </div>
+                                <div class="video-info">
+                                   <p class="vid-title">asiwaju is the best song of 2022 <br> || Meg Stallion won</p>
+                                   <a href="" class="chn-name">BlackTeaBlog</a>
+                                   <br>
+                                   <p href="" class="views">13k views</p> <span></span>
+                                   <p href="" class="time-upld">10 hours ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <!-- end of scroll-gallery  -->
+        </section>
+    </main>
+</body>
+<script src="/public/javascript/index.js"></script>
+</html>

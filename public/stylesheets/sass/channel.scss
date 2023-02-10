@@ -1,0 +1,235 @@
+$main_font: calibri;
+$main_background: rgba(159, 51, 21, 0.913);
+$main_textcolor: black;
+$accent_color: rgba(189, 93, 71, 0.932);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2fr repeat(3, 50%);
+    grid-template-areas: 
+        "header header header"
+        "main main main"
+        "main main main"
+        "main main main"
+    ;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    grid-area: header;
+    outline: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: white;
+        .brd-logo-wrapper{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 200px;
+            // outline: 2px solid black;
+                    span{
+                        transition: border-radius, ease-in 1s;
+                        padding: 0.3rem;
+                        border-radius: 50%;
+                    }
+                    span:hover{
+                        background-color: $accent_color;
+                        cursor: pointer; 
+                    }
+
+                    .menu-btn{
+                        margin-left: 10px;
+                    }
+
+                    .brd-logo{
+                        img{
+                            width: 150px;
+                            height: 50px;
+                        }
+                    }
+
+                // .menu-btn{
+                //     width: auto;
+                //     outline: 2px solid black;
+                        
+                // }
+        }
+
+        .search-bar-wrapper{
+            // outline: 2px solid black;
+            width: 450px;
+            margin-left: -50px;
+            padding: 0.2rem;
+                form{
+                    display: flex;
+                    align-items: center;
+                }
+                #search{
+                    width: 400px;
+                    height: 45px;
+                    border-radius: 5px;
+                    outline: 1px solid rgb(179, 177, 177);
+                    border: none;
+                    padding: 0.5rem;
+                }
+                .bx-search-alt{
+                    padding: 0.6rem;
+                    font-size: 25px;
+                    background-color: $accent_color;
+                }
+
+                .nav-sr-btn{
+                    border: none;
+                    background: none;
+                }
+
+        }
+
+        .icons-wrapper{
+            // outline: 2px solid black;
+            margin-right: 100px;
+            width: 200px;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            // position: relative;
+                #create-vid-icon{
+                    color: $main_textcolor;
+                }
+                .notifications-wrap{
+                        // outline: 2px solid black;
+                        position: relative;
+                        #bell-btn{
+                            display: block;
+                            border: none;
+                            background:none;
+                            // background-color: $accent_color;
+                        }
+                        .bx-bell{
+                            color: $main_textcolor;
+                            font-weight: 100;
+                        }
+
+                        #notifications{
+                            background-color: red;
+                            color: white;
+                            border: 1px solid transparent;
+                            border-radius: 50%;
+                            position: absolute;
+                            top: -5px;
+                            left: 18px;
+                            z-index: 5;
+                            font-weight:500;
+                            font-family: $main_font;
+                            font-size: 14px;
+                            width: auto;
+                            padding: 0 5px 0 5px;
+                            text-align: center;
+                            // outline: 1px solid black;
+                        }
+                }
+
+                .sign-in-btn{
+                    padding: 0.5rem;
+                    background-color: $accent_color;
+                    border: none;
+                    border-radius: 5px;
+                }
+
+                .user-settings-btn{
+                    width: 50px;
+                    padding: 0.6rem;
+                    border-radius: 50%;
+                    font-size: 15px;
+                    display: none;
+                }
+        }
+}
+
+main{
+    outline: 2px solid black;
+    margin-top: 70px;
+    height: 100%;
+    // overflow: auto;
+    width: 100%;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 0.85fr;
+    grid-template-rows: repeat(3, 50%);
+    grid-template-areas: 
+        "col-1 col-1 col-2"
+        "col-1 col-1 col-2"
+        "col-1 col-1 col-2"
+    ;
+    gap: 1rem;
+        .main-columns{
+            padding: 1rem;
+        }
+        
+        .related-content-wrapper{
+            grid-area: col-2;
+            background-color: red;
+        }
+        .video-play-wrapper{
+            grid-area: col-1;
+            background-color: teal;
+            outline: 2px solid black;
+                .video-player-wrap{
+                        .video-player{
+                            width: 100%;
+                            height: 550px;
+                            background-color: black;
+                            position: relative;
+                            z-index: 9;
+                        }
+                        .video-icons-wrap{
+                            width: 100%;
+                            height: 50px;
+                            outline: 2px solid black;
+                            background-color: white;
+                            display: flex;
+                            justify-content: space-between;
+                            z-index: 1;
+                            position: absolute;
+                            top: 500px;
+                            left: 0;
+                                .right-controls, .left-controls{
+                                    display: inherit;
+                                }
+
+                                .right-controls{
+                                    width: auto;
+                                   outline: 2px solid black;
+                                        .video-icon{
+                                            padding-left: 20px;
+                                            outline: 2px solid black;
+                                            width: 50px;
+                                                    i{
+                                                        text-align: center;
+                                                    }
+                                            // height: auto;
+                                        }
+                                }
+                                .video-icon > .bx{
+                                    color: $main_background;
+                                }
+                                
+                        }
+
+                }
+        }
+        
+}
